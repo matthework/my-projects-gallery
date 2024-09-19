@@ -1,0 +1,10 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "my-projects-gallery-container",
+      "image": "288761725469.dkr.ecr.ap-southeast-2.amazonaws.com/matthework/gallery-docker-repo:latest",
+      "essential": true
+    }
+  ]
+}
