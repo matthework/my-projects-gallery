@@ -15,13 +15,11 @@ export const createProject = async (req, res) => {
   // res.send("Server is ready!");
   const project = req.body; // user will send this data
 
-  if (!project.name || !project.url_live) {
-    return res
-      .status(400)
-      .json({
-        success: false,
-        message: "Please provide fields of name or url_live.",
-      });
+  if (!project.name) {
+    return res.status(400).json({
+      success: false,
+      message: "Please provide the required fields!",
+    });
   }
 
   const newProject = new Project(project);

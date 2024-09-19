@@ -4,10 +4,10 @@ export const useProjectStore = create((set) => ({
   projects: [],
   setProjects: (projects) => set({ projects }),
   createProject: async (newProject) => {
-    if (!newProject.name || !newProject.url_live) {
+    if (!newProject.name) {
       return {
         success: false,
-        message: "Please fill fields of name and url_live.",
+        message: "Please fill the required fields!",
       };
     }
     const res = await fetch("/api/projects", {

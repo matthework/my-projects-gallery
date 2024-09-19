@@ -33,15 +33,15 @@ const Navbar = () => {
           bgGradient={"linear(to-l, #7928CA, #FF0080)"}
           bgClip={"text"}
         >
-          <Link to={"/"}>Projects Gallery</Link>
+          <Link to={"/"}>Matt&apos;s Gallery</Link>
         </Text>
 
         <HStack spacing={2} alignItems={"center"}>
-          <Link to={"/create"}>
+          {/* <Link to={"/create"}>
             <Button>
               <PlusSquareIcon />
             </Button>
-          </Link>
+          </Link> */}
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <IoMoon /> : <LuSun size="20" />}
           </Button>

@@ -96,6 +96,24 @@ const CreatePage = () => {
                 setNewProject({ ...newProject, url_code: e.target.value })
               }
             />
+            <Input
+              placeholder="Index"
+              name="index"
+              type="number"
+              value={newProject.index}
+              onChange={(e) =>
+                setNewProject({ ...newProject, index: e.target.value })
+              }
+            />
+            <Input
+              placeholder="Show or Hide?"
+              name="show"
+              type="boolean"
+              value={newProject.show}
+              onChange={(e) =>
+                setNewProject({ ...newProject, show: e.target.value })
+              }
+            />
             <Button colorScheme="blue" onClick={handleAddProject} w="full">
               Add Project
             </Button>

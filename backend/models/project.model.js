@@ -16,11 +16,20 @@ const projectSchema = new mongoose.Schema(
     },
     url_live: {
       type: String,
-      required: true,
+      required: false,
     },
     url_code: {
       type: String,
       required: false,
+    },
+    index: {
+      type: Number,
+      required: false,
+    },
+    show: {
+      type: Boolean,
+      required: false,
+      default: true,
     },
   },
   {
